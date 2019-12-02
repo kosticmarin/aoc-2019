@@ -1,10 +1,12 @@
 use std::fs;
 
 fn fuel_counter_upper(input: String) -> i32 {
-    input.split_whitespace()
-    .map(|s| s.parse::<f32>().unwrap())
-    .map(|n| (n/3.0f32).floor() as i32 - 2i32)
-    .sum()
+    input
+        .split_whitespace()
+        .map(|s| s.parse::<i32>())
+        .filter_map(Result::ok)
+        .map(|n| (n / 3) - 2)
+        .sum()
 }
 
 fn main() {

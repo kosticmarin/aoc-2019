@@ -1,0 +1,11 @@
+[package]
+name = "aoc-2019"
+version = "0.1.0"
+authors = ["Marin Koštić <kosticmarin@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[[bin]]
+name = "rocket_equation"
+path = "src/d1.rs"

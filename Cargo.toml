@@ -9,3 +9,7 @@ edition = "2018"
 [[bin]]
 name = "rocket_equation"
 path = "src/d1.rs"
+
+[[bin]]
+name = "gravity_assist"
+path = "src/d2.rs"
